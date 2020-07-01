@@ -23,8 +23,8 @@
                 </div>
             </div>
 
-        <?php endwhile; wp_reset_postdata();?>
-      <?php else : esc_html_e( 'No testimonials in the diving taxonomy!', 'gamewiki' ); endif;?>
+        <?php endwhile; wp_reset_postdata();?>     
     </div>
     <div class="slider_video-dot text--center myt-20"></div>
 </section>
+<?php endif;?>
