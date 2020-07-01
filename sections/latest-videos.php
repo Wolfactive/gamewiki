@@ -1,18 +1,17 @@
+<?php
+    $args = array(
+        'post_type' => 'latest_videos',
+        'post_status' => 'publish',
+        'posts_per_page' =>  10,
+    );
+    $list_videoLatest = new WP_Query( $args );
+    if($list_videoLatest->have_posts()) : ?>
 <section class="latest_video" id="latestVideo">
     <div class="big_title_latestvideo">
         <div class="mc-icon"><i class="fab fa-youtube"></i></div>
         <div class="big-title-style">List of latest videos</div>
     </div>
-    <div class="slider_video">
-        <?php
-            $args = array(
-                'post_type' => 'latest_videos',
-                'post_status' => 'publish',
-                'posts_per_page' =>  10,
-            );
-            $list_videoLatest = new WP_Query( $args );
-            if($list_videoLatest->have_posts()) :
-            ?>
+    <div class="slider_video">       
             <?php while($list_videoLatest->have_posts()) : $list_videoLatest->the_post(); ?>
             <div class="images_latest_video">
                 <a href="<?php echo get_field('link_video'); ?>" class="d--block" target="_blank">
