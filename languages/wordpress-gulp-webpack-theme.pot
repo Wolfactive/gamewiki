@@ -13,6 +13,6 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: bundled/page-templates/Homepage.php:3, page-templates/Homepage.php:3
+#: page-templates/Homepage.php:3
 msgid "Home Page"
 msgstr ""
