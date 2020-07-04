@@ -50,12 +50,6 @@
               <span>facebook</span>
            </a>
          </div>
-         <div class="header__item-social">
-           <a  href="<?php echo get_theme_mod('link_twitter',__('https://twitter.com/')) ?>" target="_blank">
-             <i class="fab fa-twitter icon"></i>
-             <span>twitter</span>
-           </a>
-         </div>
        </div>
   	</div>
   </div>
