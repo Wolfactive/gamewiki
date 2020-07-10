@@ -15,6 +15,11 @@
      <link rel="stylesheet" href="<?php echo get_theme_file_uri('dist/css/main.css') ?>">
      <script defer type='text/javascript' src="<?php echo get_theme_file_uri('dist/js/root.js') ?>"></script>
      <?php wp_head();?>
+     <?php $header_scripts = get_field('header_script','option');
+      if(isset($header_scripts) && $header_scripts){
+        echo $header_scripts;
+      }   
+     ?>
 </head>
 <body <?php body_class(); ?>>
 <section class="header">
@@ -48,6 +53,12 @@
            <a href="<?php echo get_theme_mod('link_face_book',__('https://www.facebook.com/')) ?>" target="_blank">
              <i class="fab fa-facebook-square icon"></i>
               <span>facebook</span>
+           </a>
+         </div>
+         <div class="header__item-social">
+           <a  href="<?php echo get_theme_mod('link_twitter',__('https://twitter.com/')) ?>" target="_blank">
+             <i class="fab fa-twitter icon"></i>
+             <span>twitter</span>
            </a>
          </div>
        </div>
