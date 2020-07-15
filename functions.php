@@ -293,7 +293,7 @@ function my_remove_menus() {
   remove_submenu_page( 'plugins.php', 'plugin-editor.php');
 }
 add_action( 'widgets_init', 'my_unregister_widgets' );
-if( !defined('ACF_LITE') ) define('ACF_LITE',true);
+//if( !defined('ACF_LITE') ) define('ACF_LITE',true);
 function my_unregister_widgets() {
     unregister_widget('WP_Widget_Pages');
     unregister_widget('WP_Widget_Calendar');
