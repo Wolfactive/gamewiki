@@ -14,11 +14,7 @@
 					<i class="fab fa-facebook-square icon"></i>
 				</a>
 			</div>
-			<div class="ft_socail">
-				<a href="<?php echo get_theme_mod('link_twitter',__('https://twitter.com/')) ?>" target="_blank">
-				<i class="fab fa-twitter icon"></i>
-				</a>
-			</div>
+			
 		</div>
 		<div class="footer_big_menu">
 			<div class="container">
@@ -52,7 +48,7 @@
 
 	<!----------=========Sub==========-------->
 	<div class="footer__sub">
-		<div class="container"><p class="text--center">Copyright © <a href="https://wolfactive.dev/">WolfActive Solution</a>: <?php echo get_theme_mod('copyright_footer',__('Largest in Japan! Game strategy information media , All Rights Reserved.')) ?></p></div>
+		<div class="container"><p class="text--center">Copyright © GAMEWIKI</p></div>
 	</div>
 	    <!----------=========Sub==========-------->
  </section>

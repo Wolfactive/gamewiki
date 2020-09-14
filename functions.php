@@ -16,7 +16,8 @@ $file_includes = [
     'includes/resize.php',
     'includes/customizer.php',
     'includes/api.php',
-    'includes/request-app-ranking.php'
+    'includes/request-app-ranking.php',
+    'includes/theme-minis.php'
 ];
 
 foreach ($file_includes as $file) {
@@ -388,7 +389,6 @@ function cpts_strategy_wiki()
         'supports' => array(
             'title',
             'thumbnail',
-            'editor',
             'custom-fields'
         ),
         'hierarchical' => true,
@@ -410,6 +410,31 @@ function cpts_strategy_wiki()
 
 }
 add_action('init', 'cpts_strategy_wiki');
+
+function app_rankings() {
+  register_post_type( 'app_ranking',array(
+    'public' => true,
+    'supports' => array(
+      'title',
+      'custom-fields'
+    ),
+    'labels' => array(
+      'name' => 'App Ranking',
+      'show_ui' => false,
+      'show_in_menu' => false,
+      'show_in_nav_menus' => false,
+      'show_in_admin_bar' => false,
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-smiley',
+      'can_export' => true,
+      'has_archive' => false,
+      'exclude_from_search' => true,
+      'publicly_queryable' => true,
+      'capability_type' => 'post'
+    )
+    ));
+}
+add_action('init', 'app_rankings');
 //End CPT Game Strategy
 
   

@@ -16,3 +16,7 @@ msgstr ""
 #: page-templates/Homepage.php:3
 msgid "Home Page"
 msgstr ""
+
+#: page-templates/newpage-default.php:3
+msgid "Page Template Default"
+msgstr ""

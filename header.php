@@ -4,7 +4,7 @@
      <meta charset="<?php bloginfo('charset'); ?>" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <meta name="author" content="Wolfactive - HuyNguyen - PhuongNam">
+     <meta name="author" content="Wolfactive - HuyNguyen - PhuongNam - TanDat">
   	 <link rel="profile" href="https://wolfactive.net/">
      <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
      <link rel="preload" href="<?php echo get_theme_file_uri('dist/css/webfonts/fa-brands-400.woff2') ?>" as="font" type="font/woff2" crossorigin>
@@ -34,7 +34,7 @@
   	        <img src="<?php echo $image[0]; ?>" alt="logo-gamewiki">
   	      </a>
           <h1 class="text--light">
-            <?php echo get_theme_mod('title_top_menu',__('Largest in Japan! Game strategy information media')) ?>
+            Trang web hướng dẫn chơi Game
           </h1>
   	   </div>
        <div class="header__item">
@@ -55,12 +55,7 @@
               <span>facebook</span>
            </a>
          </div>
-         <div class="header__item-social">
-           <a  href="<?php echo get_theme_mod('link_twitter',__('https://twitter.com/')) ?>" target="_blank">
-             <i class="fab fa-twitter icon"></i>
-             <span>twitter</span>
-           </a>
-         </div>
+         
        </div>
   	</div>
   </div>
