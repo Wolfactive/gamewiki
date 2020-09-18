@@ -34,7 +34,7 @@
                  </div>
                  <div class="gamewiki__container-content col-divide-6 col-divide-md-12">
                      <?php while(have_posts()) : the_post() ; ?>
-                     <h1 class="single__title title--section"><?php //the_title(); ?></h1>
+                     <h1 class="single__title title--section text--center"><?php the_title(); ?></h1>
              <p class="date"><strong><?php the_date(); ?></strong></p>
              <div class="shareon" style="font-size: 25px;">
                  <a class="facebook" style="color:#0f90f3"><i class="fab fa-facebook"></i></a>
